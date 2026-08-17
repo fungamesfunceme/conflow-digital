@@ -1,0 +1,310 @@
+{
+  "1.1 F-A": {
+    "code": "1.1 F-A",
+    "sphere": "hidrica",
+    "title": "Impedimento físico e cobrança",
+    "body": "No caso de impedimento físico de acesso à água,\nmotivado à possível cobrança indevida,\nrecomenda-se a apuração da situação junto à\nCogerh/SRH pela cobrança, além da verificação da\nexistência de possível servidão de passagem\nquanto à entrada ao terreno.\nA providência inicial deve incluir a identificação do\nlocal, do responsável pelo impedimento, da forma\nde bloqueio do acesso e da natureza da cobrança\nrealizada. Caso o impedimento afete uma\ncoletividade ou dificulte o acesso comum à água, a\nsituação poderá ser comunicada ao Ministério\nPúblico, especialmente quando houver possível\nviolação de direito coletivo.",
+    "sourcePage": 5
+  },
+  "2 F-A": {
+    "code": "2 F-A",
+    "sphere": "hidrica",
+    "title": "Cobrança de água",
+    "body": "No caso de cobrança considerada inadequada pelo\nacesso ou uso da água, sem que haja impedimento\nfísico ao acesso, recomenda-se a apuração da\norigem e da legalidade da cobrança. Deve ser\nverificado quem realiza a cobrança, qual a\njustificativa apresentada, se há contrato,\nautorização, rateio formal de custos, servidão de\npassagem ou outro fundamento que permita a\nexigência do valor. Caso não exista base legal ou\ncontratual, a cobrança poderá ser questionada\nadministrativamente ou judicialmente junto à\nCogerh/SRH.",
+    "sourcePage": 7
+  },
+  "3.2 F-A": {
+    "code": "3.2 F-A",
+    "sphere": "hidrica",
+    "title": "Barragem em licenciamento",
+    "body": "Recomenda-se que as pessoas\nafetadas participem da audiência\npública e apresentem formalmente\nsuas reivindicações, questionamentos\ne relatos sobre os problemas\nrelacionados ao acesso à água,\ncobranças consideradas inadequadas,\nbarramentos, uso de recursos\nhídricos, impactos ambientais ou\nqualquer outra situação que esteja\nprejudicando a coletividade.",
+    "sourcePage": 9
+  },
+  "3.3 F-A": {
+    "code": "3.3 F-A",
+    "sphere": "hidrica",
+    "title": "Barragem possivelmente irregular",
+    "body": "Recomenda-se que seja formalizada denúncia\njunto à Cogerh/SRH, para apuração da\nregularidade da barragem construída em\npropriedade particular, especialmente\nquanto à existência de outorga ou licença de\nobra hídrica e quanto ao possível\nimpedimento da chegada da água ao imóvel\nvizinho. Caso a obra esteja causando dano\nambiental, intervenção em APP, alteração do\ncurso d’água ou prejuízo coletivo ao acesso à\nágua, a situação também poderá ser\nencaminhada à Semace, ao órgão ambiental\nmunicipal competente e, se necessário, ao\nMinistério Público.",
+    "sourcePage": 11
+  },
+  "3.4 F-A": {
+    "code": "3.4 F-A",
+    "sphere": "hidrica",
+    "title": "Barragem cadastrada",
+    "body": "Tratando-se de barragem regularizada no\nsistema estadual de barragens do Ceará,\neventual demanda relacionada à sua\nsegurança, operação, manutenção ou\ninterferência no uso da água deverá ser\nencaminhada à Secretaria dos Recursos\nHídricos — SRH, órgão responsável pela\nfiscalização da segurança das barragens sob\nsua jurisdição, com apoio técnico da Cogerh\nquando cabível. A regularização da barragem\nnão afasta a possibilidade de fiscalização,\nespecialmente quando houver relato de risco,\nfalha de operação, prejuízo a usuários,\nalteração no fluxo da água ou possível\nimpacto ambiental.",
+    "sourcePage": 13
+  },
+  "3.5 F-A": {
+    "code": "3.5 F-A",
+    "sphere": "hidrica",
+    "title": "Barragem não cadastrada",
+    "body": "No caso de barragem não cadastrada no sistema\nestadual de barragens do Ceará, recomenda-se o\nencaminhamento da demanda à SRH/Cogerh, para\nque seja realizada fiscalização técnica e verificada a\nregularidade da obra. Deve-se também verificar se\nessa barragem deveria estar cadastrada no sistema\nde segurança de barragens em função do volume\nmáximo ou altura.\nA ausência de cadastro pode indicar necessidade\nde apuração administrativa, especialmente quando\na barragem interfere no fluxo da água, causa\nprejuízo a terceiros, apresenta risco à segurança ou\nfoi construída sem autorização. Caso também haja\ndano ambiental, intervenção em APP,\ndesmatamento, assoreamento ou alteração\nirregular do corpo hídrico, também poderá ser\nacionado o Ministério Público.",
+    "sourcePage": 15
+  },
+  "4.2 F-A": {
+    "code": "4.2 F-A",
+    "sphere": "hidrica",
+    "title": "Captação em canal, lago ou reservatório",
+    "body": "Deve-se procurar o órgão gestor de recursos\nhídricos responsável, como a COGERH/SRH no\nCeará, informando que há indício de captação\nacima da vazão outorgada em um canal. Caso\nhaja indício de retirada intencional ou prejuízo\ncoletivo aos demais usuários, a situação também\npode ser comunicada ao Ministério Público,\nespecialmente quando envolver conflito pelo\nacesso à água ou impacto sobre comunidades\nabastecidas pelo canal.",
+    "sourcePage": 17
+  },
+  "4.3 F-A": {
+    "code": "4.3 F-A",
+    "sphere": "hidrica",
+    "title": "Retirada em adutora",
+    "body": "Caso se trate de uma adutora de águas brutas,\ndeve-se buscar a fiscalização junto à\nCogerh/SRH. No caso de uma adutora de águas\ntratadas deve comunicar imediatamente à\ncompanhia ou órgão responsável pela adutora,\npor exemplo, SAAE, Cagece, prefeitura ou\noperador do sistema, conforme quem\nadministra a estrutura. Caso haja indício de\nretirada intencional ou prejuízo coletivo aos\ndemais usuários, a situação também pode ser\ncomunicada ao Ministério Público, especialmente\nquando envolver conflito pelo acesso à água ou\nimpacto sobre comunidades abastecidas pelo\ncanal.",
+    "sourcePage": 19
+  },
+  "5.1 F-A": {
+    "code": "5.1 F-A",
+    "sphere": "hidrica",
+    "title": "Exploração subterrânea planejada",
+    "body": "O caminho principal é acionar a SRH/COGERH\nantes da captação, especialmente para verificar\nse existe pedido de outorga, outorga concedida,\nautorização para obra hídrica, poço, barramento,\ncaptação em rio/açude ou interferência no\nregime da água.",
+    "sourcePage": 21
+  },
+  "5.2 F-A": {
+    "code": "5.2 F-A",
+    "sphere": "hidrica",
+    "title": "Exploração de águas subterrâneas",
+    "body": "Caso se trate de uma adutora de águas brutas,\ndeve-se buscar a fiscalização junto à\nCogerh/SRH. No caso de uma adutora de águas\ntratadas deve comunicar imediatamente à\ncompanhia ou órgão responsável pela adutora,\npor exemplo, SAAE, Cagece, prefeitura ou\noperador do sistema, conforme quem\nadministra a estrutura. Caso haja indício de\nretirada intencional ou prejuízo coletivo aos\ndemais usuários, a situação também pode ser\ncomunicada ao Ministério Público, especialmente\nquando envolver conflito pelo acesso à água ou\nimpacto sobre comunidades abastecidas pelo\ncanal.",
+    "sourcePage": 23
+  },
+  "6 F-A": {
+    "code": "6 F-A",
+    "sphere": "hidrica",
+    "title": "Prioridade de uso",
+    "body": "O caminho principal é acionar a SRH/COGERH.\nCaso haja indício de prejuízo coletivo aos demais\nusuários, a situação também pode ser\ncomunicada ao Ministério Público, especialmente\nquando envolver conflito pelo acesso à água ou\nimpacto sobre comunidades abastecidas pelo\ncanal. Quando se tratar de uma transposição de\nbacias ou usos da água entre dois estados,\npoderá ser acionada a ANA, em razão das\nquestões de dominialidade do manancial.",
+    "sourcePage": 25
+  },
+  "6.1 F-A": {
+    "code": "6.1 F-A",
+    "sphere": "hidrica",
+    "title": "Transferência ou impacto entre bacias",
+    "body": "O caminho principal é acionar a SRH/COGERH.\nCaso haja indício de prejuízo coletivo aos demais\nusuários, a situação também pode ser\ncomunicada ao Ministério Público, especialmente\nquando envolver conflito pelo acesso à água ou\nimpacto sobre comunidades abastecidas pelo\ncanal. Quando se tratar de uma transposição de\nbacias ou usos da água entre dois estados,\npoderá ser acionada a ANA, em razão das\nquestões de dominialidade do manancial.",
+    "sourcePage": 27
+  },
+  "6.3 F-A": {
+    "code": "6.3 F-A",
+    "sphere": "hidrica",
+    "title": "Uso irregular na bacia",
+    "body": "O caminho principal é acionar a SRH/COGERH.\nCaso haja indício de prejuízo coletivo aos demais\nusuários, a situação também pode ser\ncomunicada ao Ministério Público, especialmente\nquando envolver conflito pelo acesso à água ou\nimpacto sobre comunidades abastecidas pelo\ncanal. Quando se tratar de uma transposição de\nbacias ou usos da água entre dois estados,\npoderá ser acionada a ANA, em razão das\nquestões de dominialidade do manancial.",
+    "sourcePage": 29
+  },
+  "7.1 F-A": {
+    "code": "7.1 F-A",
+    "sphere": "hidrica",
+    "title": "Articulação institucional",
+    "body": "Deve-se verificar a atribuição\nde atuação pela Constituição\nFederal e recorrerer à\ninstância recomendada.",
+    "sourcePage": 31
+  },
+  "1 F-B": {
+    "code": "1 F-B",
+    "sphere": "ambiental",
+    "title": "Lançamento de efluentes",
+    "body": "O caso pode ser objeto de denúncia aos órgãos de\nfiscalização ambiental, como a Semace, bem como\nde comunicação à Cogerh, por meio do formulário\npróprio de fiscalização.\nTambém poderá haver encaminhamento para\napuração na esfera penal, caso os fatos indiquem a\npossível prática de crime ambiental, contravenção\npenal — ou seja, uma infração penal menos grave\nque um crime, geralmente sujeita a punições mais\nleves — ou outra infração de natureza penal.\nQuando não houver crime ou contravenção penal,\nmas forem identificados danos civis que atinjam a\ncoletividade, o meio ambiente ou interesses\ndifusos, o caso poderá justificar a atuação do\nMinistério Público, inclusive com a possibilidade\nde ajuizamento de ação civil pública.\nDiretrizes legais:\nLei de Crimes Ambientais - F\nLei n° 9.605/1998\nLei da ação civil pública - Lei n°\n7.347/1985 B",
+    "sourcePage": 33
+  },
+  "1.2 F-B": {
+    "code": "1.2 F-B",
+    "sphere": "ambiental",
+    "title": "Lançamento sem outorga",
+    "body": "A situação pode ser objeto de denúncia à\nCogerh/SRH. em função à ausência de outorga.\nTambém é recomendável encaminhar denúncia à\nSemace, por se tratar de possível infração ambiental\nrelacionada ao lançamento irregular de esgoto em\ncorpo hídrico. A Semace recebe denúncias ambientais\nquando há violação de regras de proteção ambiental.\nCaso o lançamento cause poluição, mortandade de\npeixes, risco à saúde pública, degradação significativa\ndo rio ou outros impactos ambientais, a situação\ntambém poderá ser encaminhada ao Ministério\nPúblico, para avaliação de eventual responsabilização\ncivil, administrativa e, se houver indícios, penal.\nDiretrizes legais:\nLei de Crimes Ambientais - F\nLei n° 9.605/1998\nLei da ação civil pública - Lei n°\n7.347/1985 B",
+    "sourcePage": 35
+  },
+  "1.3 F-B": {
+    "code": "1.3 F-B",
+    "sphere": "ambiental",
+    "title": "Atividade e licenciamento",
+    "body": "O motivo conflitante deve ser\nencerrado, uma vez que a\natividade reivindicada não se\nenquadra como atividade de\nimpacto ambiental não\nsignificativo.\nDiretrizes:\nResolução CONAMA n° 237/1997 F\nResolução COEMA n° 02 /2019\n(ANEXO I)",
+    "sourcePage": 37
+  },
+  "1.4 F-B": {
+    "code": "1.4 F-B",
+    "sphere": "ambiental",
+    "title": "Competência federal",
+    "body": "No caso de atividade cuja competência seja\nda União, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental federal\ncompetente, em regra o IBAMA, sem\nprejuízo da atuação de outros órgãos\nfederais quando a matéria envolver\ncompetências específicas.\nDiretrizes:\nResolução CONAMA n° 237/1997 F\nResolução COEMA n° 02 /2019\n(ANEXO I)",
+    "sourcePage": 39
+  },
+  "1.5 F-B": {
+    "code": "1.5 F-B",
+    "sphere": "ambiental",
+    "title": "Competência estadual",
+    "body": "No caso de atividade cuja competência seja\nestadual, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental estadual\ncompetente, conforme a natureza da\natividade e o local onde ela é desenvolvida.\nNo Estado do Ceará, essa atribuição é\nexercida pela Semace, quando se tratar de\natividade sujeita ao controle ambiental\nestadual.\nDiretrizes:\nResolução COEMA n° 07/2019 F\nResolução COEMA n° 02 /2019\n(ANEXO I)",
+    "sourcePage": 41
+  },
+  "1.6 F-B": {
+    "code": "1.6 F-B",
+    "sphere": "ambiental",
+    "title": "Competência municipal",
+    "body": "No caso de atividade de competência\nmunicipal, e havendo no município órgão\nambiental licenciador próprio, caberá a esse\nórgão a responsabilidade pelo licenciamento\nambiental e pela fiscalização da atividade. Essa\ncompetência se aplica, em geral, às atividades\nde impacto ambiental local, ou seja, aquelas\ncujos efeitos ambientais ficam restritos ao\nterritório do município e não ultrapassam o\ninteresse local.\nDiretrizes:\nResolução COEMA n° 07/2019 F\nResolução COEMA n° 02 /2019\n(ANEXO I)",
+    "sourcePage": 43
+  },
+  "2 F-B": {
+    "code": "2 F-B",
+    "sphere": "ambiental",
+    "title": "Resíduos em corpo hídrico",
+    "body": "A ocorrência poderá ser encaminhada à Semace,\nquando se tratar de matéria de competência estadual,\nao órgão ambiental municipal, quando o impacto for\nlocal e o município possuir estrutura\nlicenciadora/fiscalizadora, e aos órgãos federais\ncompetentes, quando houver bem ou área sob\nresponsabilidade da União. Caso o descarte ocorra em\ncorpo hídrico, como rio, lago, açude ou reservatório,\ntambém é recomendável a comunicação à\nCogerh/SRH, especialmente quando houver risco de\nalteração da qualidade da água, comprometimento do\nuso do recurso hídrico. Além das providências\nadministrativas, havendo indícios de dano ambiental,\npoluição, risco à saúde pública, descarte irregular\nreiterado ou prejuízo à coletividade, o caso poderá ser\nencaminhado ao Ministério Público, para avaliação\nquanto à adoção de medidas civis e, se cabível,\napuração de eventual responsabilidade penal.\nDiretrizes legais:\nLei de Crimes Ambientais - F\nLei n° 9.605/1998\nLei da ação civil pública - Lei n°\n7.347/1985",
+    "sourcePage": 45
+  },
+  "2.1 F-B": {
+    "code": "2.1 F-B",
+    "sphere": "ambiental",
+    "title": "Descarte irregular fora do corpo hídrico",
+    "body": "A ocorrência poderá ser encaminhada à Semace,\nquando se tratar de matéria de competência estadual,\nao órgão ambiental municipal, quando o impacto for\nlocal e o município possuir estrutura\nlicenciadora/fiscalizadora, e aos órgãos federais\ncompetentes, quando houver bem ou área sob\nresponsabilidade da União. Para o caso, quando em\nflagrante, também pode ser acionado o Batalhão de\nPolícia de Meio Ambiente, na unidade de atuação\nde sua região. Além das providências administrativas,\nhavendo indícios de dano ambiental, poluição, risco à\nsaúde pública, descarte irregular reiterado ou prejuízo\nà coletividade, o caso poderá ser encaminhado ao\nMinistério Público, para avaliação quanto à adoção\nde medidas civis e, se cabível, apuração de eventual\nresponsabilidade penal.\nDiretrizes legais:\nLei de Crimes Ambientais -\nLei n° 9.605/1998\nLei da ação civil pública - Lei n° 7.347/1985\nPolítica Nacional de Resíduos Sólidos\nLei 12.305/2010 B",
+    "sourcePage": 47
+  },
+  "3.1 F-B": {
+    "code": "3.1 F-B",
+    "sphere": "ambiental",
+    "title": "Questões agrícolas em margens",
+    "body": "A ocorrência poderá ser encaminhada à Semace,\nquando se tratar de matéria de competência\nestadual, ao órgão ambiental municipal, quando o\nimpacto for local e o município possuir estrutura\nlicenciadora/fiscalizadora, e aos órgãos federais\ncompetentes, quando houver bem ou área sob\nresponsabilidade da União. Para o caso, quando em\nflagrante, também pode ser acionado o Batalhão\nde Polícia de Meio Ambiente, na unidade de\natuação de sua região. Além das providências\nadministrativas, havendo indícios de dano\nambiental, poluição, risco à saúde pública, descarte\nirregular reiterado ou prejuízo à coletividade, o caso\npoderá ser encaminhado ao Ministério Público,\npara avaliação quanto à adoção de medidas civis e,\nse cabível, apuração de eventual responsabilidade\npenal.\nDiretrizes legais:\nLei de Crimes Ambientais -\nLei n° 9.605/1998\nLei da ação civil pública - Lei n° 7.347/1985\nPolítica Nacional de Resíduos Sólidos\nLei 12.305/2010 B",
+    "sourcePage": 49
+  },
+  "3.2 F-B": {
+    "code": "3.2 F-B",
+    "sphere": "ambiental",
+    "title": "Atividade agrícola e licenciamento",
+    "body": "O motivo conflitante deve ser\nencerrado, uma vez que a\natividade reivindicada não se\nenquadra como atividade de\nimpacto ambiental não\nsignificativo.",
+    "sourcePage": 51
+  },
+  "3.3 F-B": {
+    "code": "3.3 F-B",
+    "sphere": "ambiental",
+    "title": "Competência federal",
+    "body": "No caso de atividade cuja competência seja\nda União, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental federal\ncompetente, em regra o IBAMA, sem\nprejuízo da atuação de outros órgãos\nfederais quando a matéria envolver\ncompetências específicas.",
+    "sourcePage": 53
+  },
+  "3.4 F-B": {
+    "code": "3.4 F-B",
+    "sphere": "ambiental",
+    "title": "Competência estadual",
+    "body": "No caso de atividade cuja competência seja\nestadual, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental estadual\ncompetente, conforme a natureza da\natividade e o local onde ela é desenvolvida.\nNo Estado do Ceará, essa atribuição é\nexercida pela Semace, quando se tratar de\natividade sujeita ao controle ambiental\nestadual.",
+    "sourcePage": 55
+  },
+  "3.5 F-B": {
+    "code": "3.5 F-B",
+    "sphere": "ambiental",
+    "title": "Competência municipal",
+    "body": "No caso de atividade de competência\nmunicipal, e havendo no município órgão\nambiental licenciador próprio, caberá a esse\nórgão a responsabilidade pelo licenciamento\nambiental e pela fiscalização da atividade. Essa\ncompetência se aplica, em geral, às atividades\nde impacto ambiental local, ou seja, aquelas\ncujos efeitos ambientais ficam restritos ao\nterritório do município e não ultrapassam o\ninteresse local.",
+    "sourcePage": 57
+  },
+  "4.1 F-B": {
+    "code": "4.1 F-B",
+    "sphere": "ambiental",
+    "title": "Criação de animais em margens",
+    "body": "Margens de rios e reservatórios dentro da\ndelimitações de áreas de preservação permanente\nsão Legalmente protegidas. A ocorrência poderá ser\nencaminhada à Semace, quando se tratar de matéria\nde competência estadual, ao órgão ambiental\nmunicipal, quando o impacto for local e o município\npossuir estrutura licenciadora/fiscalizadora, e aos\nórgãos federais competentes, quando houver bem\nou área sob responsabilidade da União. Além das\nprovidências administrativas, havendo indícios de\ndano ambiental, poluição, risco à saúde pública,\ndescarte irregular reiterado ou prejuízo à\ncoletividade, o caso poderá ser encaminhado ao\nMinistério Público, para avaliação quanto à adoção\nde medidas civis e, se cabível, apuração de eventual\nresponsabilidade penal.\nDiretrizes legais:\nLei de Crimes Ambientais -\nLei n° 9.605/1998\nLei da ação civil pública - Lei n° 7.347/1985\nPolítica Nacional de Resíduos Sólidos\nLei 12.305/2010 B",
+    "sourcePage": 59
+  },
+  "4.2 F-B": {
+    "code": "4.2 F-B",
+    "sphere": "ambiental",
+    "title": "Atividade pecuária e licenciamento",
+    "body": "O motivo conflitante deve ser\nencerrado, uma vez que a\natividade reivindicada não se\nenquadra como atividade de\nimpacto ambiental não\nsignificativo.",
+    "sourcePage": 61
+  },
+  "4.3 F-B": {
+    "code": "4.3 F-B",
+    "sphere": "ambiental",
+    "title": "Competência federal",
+    "body": "No caso de atividade cuja competência seja\nda União, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental federal\ncompetente, em regra o IBAMA, sem\nprejuízo da atuação de outros órgãos\nfederais quando a matéria envolver\ncompetências específicas.",
+    "sourcePage": 63
+  },
+  "4.4 F-B": {
+    "code": "4.4 F-B",
+    "sphere": "ambiental",
+    "title": "Competência estadual",
+    "body": "No caso de atividade cuja competência seja\nestadual, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental estadual\ncompetente, conforme a natureza da\natividade e o local onde ela é desenvolvida.\nNo Estado do Ceará, essa atribuição é\nexercida pela Semace, quando se tratar de\natividade sujeita ao controle ambiental\nestadual.",
+    "sourcePage": 65
+  },
+  "4.5 F-B": {
+    "code": "4.5 F-B",
+    "sphere": "ambiental",
+    "title": "Competência municipal",
+    "body": "No caso de atividade cuja competência seja\nestadual, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental estadual\ncompetente, conforme a natureza da\natividade e o local onde ela é desenvolvida.\nNo Estado do Ceará, essa atribuição é\nexercida pela Semace, quando se tratar de\natividade sujeita ao controle ambiental\nestadual.\nDiretrizes:\nResolução COEMA n° 07/2019 F\nResolução COEMA n° 02 /2019\n(ANEXO I)",
+    "sourcePage": 67
+  },
+  "5 F-B": {
+    "code": "5 F-B",
+    "sphere": "ambiental",
+    "title": "Desmatamento em margem protegida",
+    "body": "Margens de rios e reservatórios dentro da\ndelimitações de áreas de preservação permanente\nsão Legalmente protegidas. A ocorrência poderá ser\nencaminhada à Semace, quando se tratar de matéria\nde competência estadual, ao órgão ambiental\nmunicipal, quando o impacto for local e o município\npossuir estrutura licenciadora/fiscalizadora, e aos\nórgãos federais competentes, quando houver bem\nou área sob responsabilidade da União. Além das\nprovidências administrativas, havendo indícios de\ndano ambiental, poluição, risco à saúde pública,\ndescarte irregular reiterado ou prejuízo à\ncoletividade, o caso poderá ser encaminhado ao\nMinistério Público, para avaliação quanto à adoção\nde medidas civis e, se cabível, apuração de eventual\nresponsabilidade penal.",
+    "sourcePage": 69
+  },
+  "5.1 F-B": {
+    "code": "5.1 F-B",
+    "sphere": "ambiental",
+    "title": "Remoção de vegetação e licenciamento",
+    "body": "O motivo conflitante deve ser\nencerrado, uma vez que a\natividade reivindicada não se\nenquadra como atividade de\nimpacto ambiental não\nsignificativo.",
+    "sourcePage": 71
+  },
+  "5.2 F-B": {
+    "code": "5.2 F-B",
+    "sphere": "ambiental",
+    "title": "Competência federal",
+    "body": "No caso de atividade cuja competência seja\nda União, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental federal\ncompetente, em regra o IBAMA, sem\nprejuízo da atuação de outros órgãos\nfederais quando a matéria envolver\ncompetências específicas.",
+    "sourcePage": 73
+  },
+  "5.3 F-B": {
+    "code": "5.3 F-B",
+    "sphere": "ambiental",
+    "title": "Competência estadual",
+    "body": "No caso de atividade cuja competência seja\nestadual, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental estadual\ncompetente, conforme a natureza da\natividade e o local onde ela é desenvolvida.\nNo Estado do Ceará, essa atribuição é\nexercida pela Semace, quando se tratar de\natividade sujeita ao controle ambiental\nestadual.",
+    "sourcePage": 75
+  },
+  "5.4 F-B": {
+    "code": "5.4 F-B",
+    "sphere": "ambiental",
+    "title": "Competência municipal",
+    "body": "No caso de atividade de competência\nmunicipal, e havendo no município órgão\nambiental licenciador próprio, caberá a esse\nórgão a responsabilidade pelo licenciamento\nambiental e pela fiscalização da atividade. Essa\ncompetência se aplica, em geral, às atividades\nde impacto ambiental local, ou seja, aquelas\ncujos efeitos ambientais ficam restritos ao\nterritório do município e não ultrapassam o\ninteresse local.",
+    "sourcePage": 77
+  },
+  "6 F-B": {
+    "code": "6 F-B",
+    "sphere": "ambiental",
+    "title": "Mineração em margem de rio",
+    "body": "Em caso de extração mineral nas margens de rios ou\nreservatórios no Ceará, recomenda-se inicialmente\nprocurar o órgão ambiental municipal ou a Semace, para\nverificar se a atividade possui licenciamento ambiental e\nautorização para intervenção em Área de Preservação\nPermanente. Embora determinadas atividades minerárias\npossam ser enquadradas como de utilidade pública ou\ninteresse social, esse enquadramento não dispensa as\nautorizações ambientais exigidas. Também deve ser\nconsultada a SRH/Cogerh, quando houver interferência no\nleito, nas margens ou na dinâmica do recurso hídrico, e a\nAgência Nacional de Mineração — ANM, responsável por\nverificar a existência e a regularidade do título minerário.\nCaso a extração esteja sendo realizada sem licença, fora\nda área autorizada ou provocando degradação ambiental,\na situação deve ser denunciada à Semace e à ANM e, em\ncaso de dano relevante ou omissão dos órgãos\ncompetentes, ao Ministério Público do Estado do Ceará. A\nANM disponibiliza canal específico para denúncias de\nirregularidades em áreas ou atividades de mineração.",
+    "sourcePage": 79
+  },
+  "6.2 F-B": {
+    "code": "6.2 F-B",
+    "sphere": "ambiental",
+    "title": "Competência federal",
+    "body": "No caso de atividade cuja competência seja\nda União, a responsabilidade pelo\nlicenciamento ambiental e pela fiscalização\ncaberá ao órgão ambiental federal\ncompetente, em regra o IBAMA, sem\nprejuízo da atuação de outros órgãos\nfederais quando a matéria envolver\ncompetências específicas.",
+    "sourcePage": 81
+  },
+  "6.3 F-B": {
+    "code": "6.3 F-B",
+    "sphere": "ambiental",
+    "title": "Competência estadual",
+    "body": "A ocorrência poderá ser encaminhada à Semace,\nquando se tratar de matéria de competência\nestadual, ao órgão ambiental municipal, quando o\nimpacto for local e o município possuir estrutura\nlicenciadora/fiscalizadora, e aos órgãos federais\ncompetentes, quando houver bem ou área sob\nresponsabilidade da União. Além das providências\nadministrativas, havendo indícios de dano ambiental,\npoluição, risco à saúde pública, descarte irregular\nreiterado ou prejuízo à coletividade, o caso poderá\nser encaminhado ao Ministério Público, para\navaliação quanto à adoção de medidas civis e, se\ncabível, apuração de eventual responsabilidade\npenal.",
+    "sourcePage": 83
+  },
+  "6.4 F-B": {
+    "code": "6.4 F-B",
+    "sphere": "ambiental",
+    "title": "Competência municipal",
+    "body": "No caso de atividade de competência\nmunicipal, e havendo no município\nórgão ambiental licenciador próprio,\ncaberá a esse órgão a responsabilidade\npelo licenciamento ambiental e pela\nfiscalização da atividade. Essa\ncompetência se aplica, em geral, às\natividades de impacto ambiental local,\nou seja, aquelas cujos efeitos\nambientais ficam restritos ao território\ndo município e não ultrapassam o\ninteresse local.",
+    "sourcePage": 85
+  },
+  "7 F-B": {
+    "code": "7 F-B",
+    "sphere": "ambiental",
+    "title": "Construção em margem protegida",
+    "body": "No caso de construção civil em margens de rios ou\nreservatórios, o primeiro encaminhamento deve ser ao órgão\nambiental municipal ou à Semace, para verificar o\nlicenciamento da obra, a delimitação da Área de Preservação\nPermanente — APP e a existência de autorização específica\npara intervenção ou supressão de vegetação. Obras em APP\nsomente podem ser autorizadas quando enquadradas nas\nhipóteses legais de utilidade pública, interesse social ou baixo\nimpacto ambiental; uma construção particular comum não se\ntorna permitida apenas por possuir alvará municipal. O Ibama\ndeve ser acionado quando a obra for de competência federal,\npor exemplo, quando estiver em unidade de conservação\nfederal, terra indígena, área pertencente à União, atingir mais\nde um estado ou integrar empreendimento sujeito a\nlicenciamento ambiental federal. O licenciamento é realizado\npor apenas um ente federativo, conforme a competência\ndefinida para o empreendimento.",
+    "sourcePage": 87
+  },
+  "7.1 F-B": {
+    "code": "7.1 F-B",
+    "sphere": "ambiental",
+    "title": "Construção em Unidade de Conservação",
+    "body": "Quando uma atividade de construção civil estiver\nlocalizada dentro ou no entorno de uma Unidade de\nConservação no Ceará, recomenda-se identificar\ninicialmente a esfera administrativa da área protegida.\nSe a unidade for federal, deverá ser consultado o\nICMBio; se for estadual, a solicitação deverá ser\nencaminhada à SEMA; e, caso seja municipal, ao órgão\ngestor do município. Paralelamente, deverá ser\nverificada junto à Semace ou ao órgão ambiental\nmunicipal a necessidade de licenciamento ambiental e\nde autorização para intervenção em APP ou supressão\nde vegetação. A viabilidade da obra dependerá da\ncategoria da Unidade de Conservação, do seu ato de\ncriação, do Plano de Manejo e do zoneamento aplicável.\nCaso a construção esteja sendo executada sem as\nautorizações necessárias ou em desacordo com as\nregras da unidade, a situação deverá ser denunciada ao\nórgão gestor da UC e ao órgão ambiental fiscalizador\ncompetente.",
+    "sourcePage": 89
+  },
+  "7.2 F-B": {
+    "code": "7.2 F-B",
+    "sphere": "ambiental",
+    "title": "Construção em área de risco",
+    "body": "Quando uma atividade de construção civil estiver\nlocalizada em área considerada de risco, recomenda-se\ncomunicar a Defesa Civil Municipal para realização de\nvistoria técnica, identificação do perigo e classificação do\ngrau de risco. A Defesa Civil poderá recomendar a\nsuspensão da obra, a adoção de medidas de\nestabilização, a interdição da área ou, em situações de\nrisco iminente, a evacuação das pessoas expostas.\nTambém deverão ser consultados o órgão municipal de\nurbanismo, para verificar o alvará e a regularidade da\nconstrução, e o órgão ambiental competente, caso a\nobra atinja Área de Preservação Permanente, vegetação\nou recursos hídricos. A manifestação da Defesa Civil não\nsubstitui o licenciamento ambiental, o alvará de\nconstrução, o projeto de engenharia nem a\nresponsabilidade técnica da obra.",
+    "sourcePage": 91
+  }
+}
