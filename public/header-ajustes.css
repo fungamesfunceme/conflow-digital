@@ -4,3 +4,15 @@
   line-height: 1.25 !important;
   max-width: 420px !important;
 }
+
+/* Garantir que a imagem do painel inicial preencha todo o retângulo */
+.welcomeVisual .welcomePanelImage {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  position: static !important;
+  z-index: auto !important;
+  filter: none !important;
+  object-fit: contain !important;
+}
