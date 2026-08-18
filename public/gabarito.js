@@ -144,7 +144,7 @@
       <span>${code}</span><strong>${text}</strong>
     </div>`;
 
-  const renderKey = (caseId, key, correct) => {
+  const renderKey = (caseId, key) => {
     const currentCaseTitle = normalize(document.querySelector(".flowCapture .caseNode strong")?.textContent) || `Caso ${caseId}`;
     const sphereText = key.sphere === "A" ? "Gestão hídrica" : "Gestão ambiental";
 
@@ -161,27 +161,54 @@
     flowHtml += node(key.final.code, key.final.text, "final");
 
     return `
-      <section class="gabaritoPanel" aria-live="polite">
-        <div class="gabaritoStatus ${correct ? "correct" : "different"}">
-          <span>${correct ? "✓ PERCURSO CORRETO" : "GABARITO DO CASO"}</span>
-          <h3>${correct ? "Seu percurso coincide com o gabarito." : "Seu percurso é diferente do fluxo de referência."}</h3>
-          <p>${correct ? "A sequência de decisões e o direcionamento final estão de acordo com a resposta de referência." : "Compare abaixo o percurso realizado com o fluxo correto deste caso."}</p>
-        </div>
-        <div class="gabaritoTitle">FLUXO CORRETO</div>
+      <aside class="gabaritoPanel" aria-label="Gabarito do caso">
+        <div class="gabaritoColumnTitle"><span>GABARITO</span><strong>Fluxo correto</strong></div>
         <div class="gabaritoFlow">${flowHtml}</div>
-      </section>`;
+      </aside>`;
   };
 
-  const revealAnswer = (completion) => {
+  const renderStatus = (correct) => `
+    <div class="comparisonStatus ${correct ? "correct" : "different"}" aria-live="polite">
+      <span>${correct ? "✓ PERCURSO CORRETO" : "✕ PERCURSO DIFERENTE DO GABARITO"}</span>
+      <strong>${correct ? "Seu fluxo coincide com a resposta de referência." : "Compare seu percurso em vermelho com o fluxo correto ao lado."}</strong>
+    </div>`;
+
+  const clearComparison = () => {
+    const section = document.querySelector(".flowSection");
+    const capture = document.querySelector(".flowCapture");
+    section?.classList.remove("comparisonVisible");
+    capture?.classList.remove("flowIncorrect", "flowCorrect");
+    section?.querySelector(".gabaritoPanel")?.remove();
+    section?.querySelector(".comparisonStatus")?.remove();
+  };
+
+  const revealAnswer = () => {
     const user = getUserFlow();
     if (!user) return;
     const key = answerKeys[user.caseId];
     if (!key) return;
-    completion.querySelector(".gabaritoPanel")?.remove();
-    const wrapper = document.createElement("div");
-    wrapper.innerHTML = renderKey(user.caseId, key, isCorrectFlow(user, key));
-    completion.appendChild(wrapper.firstElementChild);
-    completion.querySelector(".gabaritoPanel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    const section = document.querySelector(".flowSection");
+    const capture = document.querySelector(".flowCapture");
+    if (!section || !capture) return;
+
+    const correct = isCorrectFlow(user, key);
+    clearComparison();
+
+    section.classList.add("comparisonVisible");
+    capture.classList.add(correct ? "flowCorrect" : "flowIncorrect");
+
+    const statusWrap = document.createElement("div");
+    statusWrap.innerHTML = renderStatus(correct);
+    const status = statusWrap.firstElementChild;
+
+    const keyWrap = document.createElement("div");
+    keyWrap.innerHTML = renderKey(user.caseId, key);
+    const panel = keyWrap.firstElementChild;
+
+    section.insertBefore(status, capture);
+    section.appendChild(panel);
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const enhanceCompletion = () => {
@@ -195,7 +222,7 @@
       button.type = "button";
       button.className = "checkAnswerKey";
       button.textContent = "Verificar fluxo correto";
-      button.addEventListener("click", () => revealAnswer(completion));
+      button.addEventListener("click", revealAnswer);
 
       actions.insertBefore(button, actions.lastElementChild || null);
       completion.dataset.gabaritoReady = "true";
@@ -205,29 +232,69 @@
   const style = document.createElement("style");
   style.textContent = `
     .checkAnswerKey{background:#2f72d6!important;color:#fff!important;border-color:#2f72d6!important}
-    .gabaritoPanel{margin-top:28px;padding:26px;background:#eaf3f5;border-top:5px solid #2f72d6}
-    .gabaritoStatus{max-width:760px;margin:0 auto 24px;padding:22px 24px;background:#fff}
-    .gabaritoStatus.correct{border-left:5px solid #6d951b}
-    .gabaritoStatus.different{border-left:5px solid #ffa43a}
-    .gabaritoStatus>span,.gabaritoTitle{font-size:10px;font-weight:900;letter-spacing:.14em;color:#2f72d6}
-    .gabaritoStatus h3{font-family:Georgia,serif;font-size:25px;line-height:1.12;margin:9px 0}
-    .gabaritoStatus p{margin:0;color:#526765;line-height:1.5;font-size:14px}
-    .gabaritoTitle{max-width:760px;margin:0 auto 14px}
+
+    .flowSection.comparisonVisible{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:34px;align-items:start}
+    .flowSection.comparisonVisible .flowHead{grid-column:1/-1;width:100%;max-width:none}
+    .flowSection.comparisonVisible .comparisonStatus{grid-column:1/-1}
+    .flowSection.comparisonVisible .flowCapture{grid-column:1;min-width:0}
+    .flowSection.comparisonVisible .gabaritoPanel{grid-column:2;min-width:0}
+    .flowSection.comparisonVisible .flowCapture:before{content:"SEU PERCURSO";display:block;max-width:760px;margin:18px auto 0;font-size:10px;font-weight:900;letter-spacing:.14em;color:#17345f}
+
+    .comparisonStatus{margin:24px 0 4px;padding:18px 22px;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px;border-left:5px solid}
+    .comparisonStatus.correct{border-color:#6d951b}
+    .comparisonStatus.different{border-color:#c84827}
+    .comparisonStatus span{font-size:10px;font-weight:900;letter-spacing:.12em}
+    .comparisonStatus.correct span{color:#557a18}
+    .comparisonStatus.different span{color:#b33b25}
+    .comparisonStatus strong{font-family:Georgia,serif;font-size:17px;text-align:right}
+
+    .gabaritoPanel{margin-top:18px;padding:0;background:transparent}
+    .gabaritoColumnTitle{max-width:760px;margin:0 auto 14px;display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+    .gabaritoColumnTitle span{font-size:10px;font-weight:900;letter-spacing:.14em;color:#2f72d6}
+    .gabaritoColumnTitle strong{font-family:Georgia,serif;font-size:21px;color:#17345f}
     .gabaritoFlow{max-width:760px;margin:0 auto;display:flex;flex-direction:column;align-items:stretch}
-    .gabaritoNode{background:#fff;border-top:4px solid #2f72d6;min-height:112px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;color:#17345f}
+    .gabaritoNode{background:#fff;border-top:4px solid #2f72d6;min-height:120px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;color:#17345f}
     .gabaritoNode.case{background:#17345f;color:#fff;border-color:#ffa43a}
     .gabaritoNode.final{background:#fff0cf;border-color:#ffa43a}
     .gabaritoNode span{font-size:11px;font-weight:900;letter-spacing:.08em}
-    .gabaritoNode strong{font-family:Georgia,serif;font-size:18px;line-height:1.18;margin-top:22px}
-    .gabaritoConnector{height:62px;position:relative;display:grid;place-items:center;color:#17345f}
+    .gabaritoNode strong{font-family:Georgia,serif;font-size:17px;line-height:1.18;margin-top:22px}
+    .gabaritoConnector{height:64px;position:relative;display:grid;place-items:center;color:#17345f}
     .gabaritoConnector i{position:absolute;width:1px;top:8px;bottom:8px;background:#78928a}
     .gabaritoConnector span{z-index:1;background:#eaf3f5;padding:4px 7px;font-size:9px;font-weight:900;letter-spacing:.1em}
     .gabaritoConnector b{position:absolute;bottom:3px;font-size:12px;color:#78928a}
-    @media(max-width:520px){.gabaritoPanel{padding:20px 14px}.gabaritoStatus{padding:18px}.gabaritoNode{min-height:100px}.gabaritoNode strong{font-size:16px}}
+
+    .flowCapture.flowIncorrect .flowNode{border-top-color:#c84827!important;background:#fff0ed!important;color:#8e2f25!important}
+    .flowCapture.flowIncorrect .flowNode.caseNode{background:#9e382b!important;color:#fff!important;border-top-color:#c84827!important}
+    .flowCapture.flowIncorrect .flowNode.endNode{background:#ffdcd5!important;color:#8e2f25!important;border-top-color:#c84827!important}
+    .flowCapture.flowIncorrect .connector i{background:#c84827!important}
+    .flowCapture.flowIncorrect .connector i:after{border-top-color:#c84827!important}
+    .flowCapture.flowIncorrect .connector span{color:#9e382b!important;font-weight:900!important}
+
+    .flowCapture.flowCorrect .flowNode{border-top-color:#6d951b!important;background:#f4f9e9!important;color:#355213!important}
+    .flowCapture.flowCorrect .flowNode.caseNode{background:#557a18!important;color:#fff!important;border-top-color:#6d951b!important}
+    .flowCapture.flowCorrect .flowNode.endNode{background:#e8f2cf!important;color:#355213!important;border-top-color:#6d951b!important}
+    .flowCapture.flowCorrect .connector i{background:#6d951b!important}
+    .flowCapture.flowCorrect .connector i:after{border-top-color:#6d951b!important}
+    .flowCapture.flowCorrect .connector span{color:#557a18!important;font-weight:900!important}
+
+    @media(max-width:950px){
+      .flowSection.comparisonVisible{grid-template-columns:1fr;row-gap:26px}
+      .flowSection.comparisonVisible .flowHead,.flowSection.comparisonVisible .comparisonStatus,.flowSection.comparisonVisible .flowCapture,.flowSection.comparisonVisible .gabaritoPanel{grid-column:1}
+      .comparisonStatus{align-items:flex-start;flex-direction:column}
+      .comparisonStatus strong{text-align:left}
+      .gabaritoPanel{padding-top:8px;border-top:1px solid #cbd9dc}
+    }
+    @media(max-width:520px){
+      .gabaritoNode{min-height:100px}.gabaritoNode strong{font-size:16px}
+      .gabaritoColumnTitle{align-items:flex-start;flex-direction:column;gap:5px}
+    }
   `;
   document.head.appendChild(style);
 
-  const observer = new MutationObserver(enhanceCompletion);
+  const observer = new MutationObserver(() => {
+    enhanceCompletion();
+    if (!document.querySelector(".completion .stepLabel")) clearComparison();
+  });
   observer.observe(document.documentElement, { childList: true, subtree: true });
   enhanceCompletion();
 })();
