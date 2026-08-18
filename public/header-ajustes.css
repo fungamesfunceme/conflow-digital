@@ -27,6 +27,182 @@ body:has(.welcomeHero) .topbar {
   display: none !important;
 }
 
+/* Paleta da página inicial alinhada ao padrão cromático do Conflow */
+body:has(.welcomeHero) .welcomeHero {
+  background: #102A2A !important;
+  color: #FFFAF1 !important;
+}
+
+body:has(.welcomeHero) .welcomeHero:before {
+  border-color: #E39A36 !important;
+  opacity: .72 !important;
+}
+
+body:has(.welcomeHero) .welcomeHero:after {
+  border-color: #126AA3 !important;
+  opacity: .72 !important;
+}
+
+body:has(.welcomeHero) .welcomeHero h1 {
+  color: #FFFAF1 !important;
+}
+
+body:has(.welcomeHero) .welcomeHero h1 em {
+  color: #E39A36 !important;
+}
+
+body:has(.welcomeHero) .welcomeIntro {
+  color: #F4F0E7 !important;
+}
+
+body:has(.welcomeHero) .welcomePrimary {
+  background: #E39A36 !important;
+  border-color: #E39A36 !important;
+  color: #102A2A !important;
+}
+
+body:has(.welcomeHero) .welcomeSecondary {
+  background: transparent !important;
+  border-color: #126AA3 !important;
+  color: #FFFAF1 !important;
+}
+
+body:has(.welcomeHero) .welcomePrimary:hover,
+body:has(.welcomeHero) .welcomeSecondary:hover {
+  filter: brightness(1.08) !important;
+}
+
+/* Nova arte da página inicial */
+body:has(.welcomeHero) .welcomeVisual {
+  width: 100% !important;
+  aspect-ratio: 1672 / 941 !important;
+  min-height: 0 !important;
+  background: #102A2A url("painel-hero-conflow-v2.webp?v=1") center / cover no-repeat !important;
+  border: 1px solid rgba(255,250,241,.22) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 20px 55px rgba(16,42,42,.30) !important;
+  overflow: hidden !important;
+}
+
+body:has(.welcomeHero) .welcomeVisual .welcomePanelImage {
+  display: none !important;
+}
+
+body:has(.welcomeHero) .welcomeAbout {
+  background: #F4F0E7 !important;
+}
+
+body:has(.welcomeHero) .welcomeSectionLabel {
+  color: #126AA3 !important;
+}
+
+body:has(.welcomeHero) .welcomeSection h2 {
+  color: #102A2A !important;
+}
+
+body:has(.welcomeHero) .welcomeSection p {
+  color: #445B58 !important;
+}
+
+body:has(.welcomeHero) .welcomeQuote {
+  background: #FFFAF1 !important;
+  border-top-color: #E39A36 !important;
+}
+
+body:has(.welcomeHero) .welcomeQuote strong {
+  color: #102A2A !important;
+}
+
+body:has(.welcomeHero) .welcomeQuote p {
+  color: #445B58 !important;
+}
+
+body:has(.welcomeHero) .welcomeAudience {
+  background: #E4EAE5 !important;
+}
+
+body:has(.welcomeHero) .audienceCard {
+  background: #FFFAF1 !important;
+  border-top-color: #126AA3 !important;
+}
+
+body:has(.welcomeHero) .audienceCard:nth-child(even) {
+  border-top-color: #12766B !important;
+}
+
+body:has(.welcomeHero) .audienceCard strong {
+  color: #102A2A !important;
+}
+
+body:has(.welcomeHero) .welcomeSteps {
+  background: #F4F0E7 !important;
+}
+
+body:has(.welcomeHero) .stepCard {
+  background: #FFFAF1 !important;
+}
+
+body:has(.welcomeHero) .stepCard:nth-child(1) {
+  border-color: #126AA3 !important;
+}
+
+body:has(.welcomeHero) .stepCard:nth-child(2) {
+  border-color: #12766B !important;
+}
+
+body:has(.welcomeHero) .stepCard:nth-child(3) {
+  border-color: #E39A36 !important;
+}
+
+body:has(.welcomeHero) .stepCard:nth-child(1) .stepNumber {
+  color: #126AA3 !important;
+}
+
+body:has(.welcomeHero) .stepCard:nth-child(2) .stepNumber {
+  color: #12766B !important;
+}
+
+body:has(.welcomeHero) .stepCard:nth-child(3) .stepNumber {
+  color: #E39A36 !important;
+}
+
+body:has(.welcomeHero) .stepCard h3 {
+  color: #102A2A !important;
+}
+
+body:has(.welcomeHero) .welcomeContact {
+  background: #FFFAF1 !important;
+  color: #102A2A !important;
+  border-top-color: #D7DDD6 !important;
+}
+
+body:has(.welcomeHero) .welcomeContactLabel,
+body:has(.welcomeHero) .welcomeContactLinks a {
+  color: #126AA3 !important;
+}
+
+body:has(.welcomeHero) .welcomeContact h2 {
+  color: #102A2A !important;
+}
+
+body:has(.welcomeHero) .welcomeCta {
+  background: #102A2A !important;
+  color: #FFFAF1 !important;
+}
+
+body:has(.welcomeHero) .welcomeCta span {
+  color: #E39A36 !important;
+}
+
+body:has(.welcomeHero) .welcomeCta h2 {
+  color: #FFFAF1 !important;
+}
+
+body:has(.welcomeHero) .welcomeCta button {
+  background: #E39A36 !important;
+  color: #102A2A !important;
+}
+
 /* No celular/tablet: imagem em cima, texto e botões embaixo */
 @media (max-width: 900px) {
   .welcomeHero .welcomeVisual {
