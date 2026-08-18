@@ -21,20 +21,3 @@
 .welcomeHero .welcomeEyebrow {
   display: none !important;
 }
-
-/* Tela inicial: imagem à esquerda e conteúdo à direita */
-@media (min-width: 901px) {
-  .welcomeHero {
-    grid-template-columns: minmax(280px, .85fr) minmax(0, 1.15fr) !important;
-  }
-
-  .welcomeHero .welcomeVisual {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-  }
-
-  .welcomeHero .welcomeHeroCopy {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-  }
-}
