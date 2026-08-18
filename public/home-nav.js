@@ -94,6 +94,14 @@
 
     setImage(document.querySelector(".welcomeVisual img"), logoUrl, "Conflow");
 
+    const quoteTitle = document.querySelector(".welcomeQuote strong");
+    const desiredQuoteTitle = "Compare o conflito a um rio.";
+    if (quoteTitle && quoteTitle.textContent !== desiredQuoteTitle) quoteTitle.textContent = desiredQuoteTitle;
+
+    const quoteText = document.querySelector(".welcomeQuote p");
+    const desiredQuoteText = "A água, quando corre livre e abundante, nutre tudo o que toca — ecossistemas, comunidades, economias inteiras florescem em suas margens. Mas a água de um rio não fica parada. O mesmo acontece com o conflito por água: quando as tensões hídricas se acumulam sem canais de diálogo, sem mecanismos de negociação, sem vazões de cooperação, elas não desaparecem. E assim como uma barragem que nunca abre suas comportas, a pressão só cresce. O conflito que não é mediado, transborda. A única diferença é que, enquanto a água segue apenas as leis da gravidade, o conflito pode encontrar leitos alternativos: comitês de bacia, acordos internacionais, governança participativa. Há diferentes caminhos para a gestão de conflitos de água e o Conflow te ajuda a conhecê-los.";
+    if (quoteText && quoteText.textContent !== desiredQuoteText) quoteText.textContent = desiredQuoteText;
+
     const ctaTitle = document.querySelector(".welcomeCta h2");
     const desiredTitle = "Escolha um dos casos e construa o caminho.";
     if (ctaTitle && ctaTitle.textContent !== desiredTitle) ctaTitle.textContent = desiredTitle;
