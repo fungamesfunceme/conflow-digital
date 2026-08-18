@@ -16,6 +16,10 @@
     });
   };
 
+  const setTextIfChanged = (element, value) => {
+    if (element && element.textContent !== value) element.textContent = value;
+  };
+
   const applyStepComparison = () => {
     const section = document.querySelector(".flowSection.comparisonVisible");
     const userFlow = section?.querySelector(".flowCapture");
@@ -55,10 +59,13 @@
       status.classList.toggle("different", !allCorrect);
       const label = status.querySelector("span");
       const message = status.querySelector("strong");
-      if (label) label.textContent = allCorrect ? "✓ PERCURSO CORRETO" : "✕ PERCURSO DIFERENTE DO GABARITO";
-      if (message) message.textContent = allCorrect
-        ? "Seu fluxo coincide com a resposta de referência."
-        : "Etapas corretas estão em verde; somente as divergências aparecem em vermelho.";
+      setTextIfChanged(label, allCorrect ? "✓ PERCURSO CORRETO" : "✕ PERCURSO DIFERENTE DO GABARITO");
+      setTextIfChanged(
+        message,
+        allCorrect
+          ? "Seu fluxo coincide com a resposta de referência."
+          : "Etapas corretas estão em verde; somente as divergências aparecem em vermelho."
+      );
     }
   };
 
@@ -80,14 +87,21 @@
   `;
   document.head.appendChild(style);
 
-  const observer = new MutationObserver(() => {
-    if (document.querySelector(".flowSection.comparisonVisible .gabaritoFlow")) {
-      applyStepComparison();
-    } else {
-      clearStepClasses();
-    }
-  });
+  let scheduled = false;
+  const scheduleComparison = () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(() => {
+      scheduled = false;
+      if (document.querySelector(".flowSection.comparisonVisible .gabaritoFlow")) {
+        applyStepComparison();
+      } else {
+        clearStepClasses();
+      }
+    });
+  };
 
+  const observer = new MutationObserver(scheduleComparison);
   observer.observe(document.documentElement, { childList: true, subtree: true });
-  applyStepComparison();
+  scheduleComparison();
 })();
