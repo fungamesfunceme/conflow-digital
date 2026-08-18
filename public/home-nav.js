@@ -53,7 +53,7 @@
   const enhanceWelcome = () => {
     addStyles();
 
-    const logoUrl = asset("conflow-logo-hq.webp");
+    const logoUrl = asset("conflow-logo-hq.png");
     document.querySelectorAll(".brandLogo").forEach((img) => setImage(img, logoUrl));
     setImage(document.querySelector(".welcomeVisual img"), logoUrl, "Conflow");
 
@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="welcomeInstitutions">
-            <img src="${asset("instituicoes.webp")}" alt="Universidade Federal do Ceará, CEPAS, COGERH e Cientista Chefe Recursos Hídricos" />
+            <img src="${asset("instituicoes.png")}" alt="Universidade Federal do Ceará, CEPAS, COGERH e Cientista Chefe Recursos Hídricos" />
           </div>
         </div>`;
       cta.parentNode?.insertBefore(section, cta);
