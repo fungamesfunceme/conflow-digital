@@ -15,7 +15,7 @@ export type FinalCard = { code: string; sphere: Sphere; title: string; body: str
 
 export const categories = {
   hidrica: [
-    ["1 A","Acesso à água"],["2 A","Cobrança de água"],["3 A","Construção de barragens"],["4 A","Furto de água"],["5 A","Águas subterrâneas"],["6 A","Partição e alocação"],["7.1 A","Governança da água"],
+    ["1 A","Acesso à água"],["2 A","Cobrança de água"],["3 A","Construção de barragens"],["4 A","Furto de água"],["5 A","Águas subterrâneas"],["6 A","Partição e alocação"],["7 A","Governança da água"],
   ],
   ambiental: [
     ["1 B","Lançamento de efluentes"],["2 B","Resíduos sólidos"],["3 B","Questões agrícolas"],["4 B","Criação de animais"],["5 B","Desmatamento"],["6 B","Mineração"],["7 B","Construção civil"],
@@ -42,7 +42,7 @@ const H: Card[] = [
   {code:"6.1 A",sphere:"hidrica",category:"Partição e alocação",title:"Partição e alocação de águas",question:"Águas de um reservatório da bacia estão sendo transferidas para outra bacia?",yes:"6.1 F-A",no:"6.2 A"},
   {code:"6.2 A",sphere:"hidrica",category:"Partição e alocação",title:"Partição e alocação de águas",question:"A bacia de jusante está sendo prejudicada pelo uso ou liberação de água a montante?",yes:"6.1 F-A",no:"6.3 A"},
   {code:"6.3 A",sphere:"hidrica",category:"Partição e alocação",title:"Partição e alocação de águas",question:"Há suspeita de uso irregular de água por determinado usuário na bacia?",yes:"6.3 F-A",no:"END"},
-  {code:"7.1 A",sphere:"hidrica",category:"Governança da água",title:"Governança da água",question:"O conflito envolve falta de articulação institucional ou participação nas decisões?",yes:"7.1 F-A",no:"END"},
+  {code:"7 A",sphere:"hidrica",category:"Governança da água",title:"Governança da água",question:"O conflito envolve falta de articulação institucional ou participação nas decisões?",yes:"7.1 F-A",no:"END"},
 ];
 
 const B: Card[] = [
