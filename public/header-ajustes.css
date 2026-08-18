@@ -203,6 +203,20 @@ body:has(.welcomeHero) .welcomeCta button {
   color: #102A2A !important;
 }
 
+/* Texto atualizado da etapa Construção dos fluxos */
+body:has(.welcomeHero) .welcomeSteps .stepCard:nth-child(2) p {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+body:has(.welcomeHero) .welcomeSteps .stepCard:nth-child(2) p::after {
+  content: "Cada clique orienta o percurso. A primeira escolha está ligada a tipologia do conflito e o(a) participante constrói o caminho de gestão a ser analisado.";
+  display: block;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #445B58;
+}
+
 /* No celular/tablet: imagem em cima, texto e botões embaixo */
 @media (max-width: 900px) {
   .welcomeHero .welcomeVisual {
