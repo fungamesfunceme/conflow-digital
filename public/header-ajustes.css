@@ -16,3 +16,8 @@
   filter: none !important;
   object-fit: contain !important;
 }
+
+/* Ocultar o rótulo "OFICINA INTERATIVA" apenas na tela inicial */
+.welcomeHero .welcomeEyebrow {
+  display: none !important;
+}
