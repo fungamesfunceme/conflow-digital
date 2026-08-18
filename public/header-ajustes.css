@@ -22,8 +22,8 @@
   display: none !important;
 }
 
-/* Na página inicial, ocultar apenas a logo do topo */
-body:has(.welcomeHero) .topbar .brandLogo {
+/* Na página inicial, ocultar toda a barra bege do topo */
+body:has(.welcomeHero) .topbar {
   display: none !important;
 }
 
