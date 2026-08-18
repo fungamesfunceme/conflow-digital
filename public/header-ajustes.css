@@ -21,3 +21,14 @@
 .welcomeHero .welcomeEyebrow {
   display: none !important;
 }
+
+/* No celular/tablet: imagem em cima, texto e botões embaixo */
+@media (max-width: 900px) {
+  .welcomeHero .welcomeVisual {
+    grid-row: 1 !important;
+  }
+
+  .welcomeHero .welcomeHeroCopy {
+    grid-row: 2 !important;
+  }
+}
