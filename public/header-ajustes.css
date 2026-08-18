@@ -22,6 +22,11 @@
   display: none !important;
 }
 
+/* Na página inicial, ocultar apenas a logo do topo */
+body:has(.welcomeHero) .topbar .brandLogo {
+  display: none !important;
+}
+
 /* No celular/tablet: imagem em cima, texto e botões embaixo */
 @media (max-width: 900px) {
   .welcomeHero .welcomeVisual {
