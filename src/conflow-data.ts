@@ -46,7 +46,7 @@ const H: Card[] = [
 ];
 
 const B: Card[] = [
-  {code:"1 B",sphere:"ambiental",category:"Lançamento de efluentes",title:"Lançamento de efluentes",question:"Há lançamento de esgoto no solo próximo a rio, reservatório ou diretamente no corpo hídrico?",yes:"1 F-B",no:"1.1 B"},
+  {code:"1 B",sphere:"ambiental",category:"Lançamento de efluentes",title:"Lançamento de efluentes",question:"Há lançamento de esgoto no solo, próximo a um rio ou riacho, no entorno de reservatórios (APP) ou diretamente no reservatório?",yes:"1 F-B",no:"1.1 B"},
   {code:"1.1 B",sphere:"ambiental",category:"Lançamento de efluentes",title:"Lançamento de efluentes",question:"O lançamento ocorre diretamente em rio ou riacho?",yes:"1.2 B",no:"1.3 B"},
   {code:"1.2 B",sphere:"ambiental",category:"Lançamento de efluentes",title:"Lançamento de efluentes",question:"O lançamento está regularizado quanto à outorga?",yes:"1.3 B",no:"1.2 F-B"},
   {code:"1.3 B",sphere:"ambiental",category:"Lançamento de efluentes",title:"Lançamento de efluentes",question:"A atividade é passível de licença ambiental?",yes:"1.4 B",no:"1.3 F-B"},
@@ -62,7 +62,7 @@ const B: Card[] = [
   {code:"3.4 B",sphere:"ambiental",category:"Questões agrícolas",title:"Questões agrícolas",question:"A atividade produz impacto regional dentro do mesmo estado?",yes:"3.4 F-B",no:"3.5 B"},
   {code:"3.5 B",sphere:"ambiental",category:"Questões agrícolas",title:"Questões agrícolas",question:"O município possui órgão ambiental competente para licenciamento?",yes:"3.5 F-B",no:"3.4 F-B"},
   {code:"4 B",sphere:"ambiental",category:"Criação de animais",title:"Questões agropecuárias",question:"Uma criação de animais parece prejudicar a qualidade da água?",yes:"4.1 B",no:"END"},
-  {code:"4.1 B",sphere:"ambiental",category:"Criação de animais",title:"Questões agropecuárias",question:"A criação de animais está em margem de rio ou reservatório?",yes:"4.1 F-B",no:"4.2 B"},
+  {code:"4.1 B",sphere:"ambiental",category:"Criação de animais",title:"Questões agropecuárias",question:"A criação de animais está em margem de nascente, rio ou reservatório?",yes:"4.1 F-B",no:"4.2 B"},
   {code:"4.2 B",sphere:"ambiental",category:"Criação de animais",title:"Questões agropecuárias",question:"A atividade é passível de licença ambiental?",yes:"4.3 B",no:"4.2 F-B"},
   {code:"4.3 B",sphere:"ambiental",category:"Criação de animais",title:"Questões agropecuárias",question:"A atividade é de competência da União?",yes:"4.3 F-B",no:"4.4 B"},
   {code:"4.4 B",sphere:"ambiental",category:"Criação de animais",title:"Questões agropecuárias",question:"A atividade produz impacto regional dentro do mesmo estado?",yes:"4.4 F-B",no:"4.5 B"},
