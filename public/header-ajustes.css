@@ -29,7 +29,7 @@ body:has(.welcomeHero) .topbar {
 
 /* Paleta da página inicial alinhada ao padrão cromático do Conflow */
 body:has(.welcomeHero) .welcomeHero {
-  background: #102A2A !important;
+  background: #011940 !important;
   color: #FFFAF1 !important;
 }
 
