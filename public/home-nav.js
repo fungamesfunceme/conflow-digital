@@ -108,7 +108,7 @@
 
     const image = document.createElement("img");
     image.className = "welcomePanelImage";
-    image.src = asset("painel-hero-conflow.webp");
+    image.src = asset("painel-hero-conflow.webp?v=2");
     image.alt = "Painel visual do Conflow com logo, rio e ícones";
 
     panel.appendChild(image);
