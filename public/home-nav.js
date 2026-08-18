@@ -55,6 +55,13 @@
 
     const logoUrl = asset("conflow-logo-hq.png");
     document.querySelectorAll(".brandLogo").forEach((img) => setImage(img, logoUrl));
+
+    const welcomeHero = document.querySelector(".welcomeHero");
+    if (!welcomeHero) {
+      document.querySelector(".welcomeContact")?.remove();
+      return;
+    }
+
     setImage(document.querySelector(".welcomeVisual img"), logoUrl, "Conflow");
 
     const ctaTitle = document.querySelector(".welcomeCta h2");
