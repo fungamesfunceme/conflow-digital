@@ -32,10 +32,9 @@
       .welcomePrimary:hover{filter:brightness(1.08)}
       .welcomeSecondary{background:transparent!important;border-color:#fffaf1!important;color:#fffaf1!important}
 
-      .welcomeVisual{position:relative!important;min-height:430px!important;display:grid!important;place-items:center!important;z-index:3}
+      .welcomeVisual{position:relative!important;min-height:0!important;display:grid!important;place-items:center!important;z-index:3;overflow:hidden!important;border-radius:24px!important;background:#17345f!important;border:1px solid rgba(255,255,255,.24)!important;box-shadow:0 20px 55px rgba(7,24,50,.24)!important}
       .welcomeVisual>.welcomeRiver{display:none!important}
-      .welcomePanelArt{position:relative;width:min(650px,100%);overflow:hidden;border-radius:24px;background:#17345f;border:1px solid rgba(255,255,255,.24);box-shadow:0 20px 55px rgba(7,24,50,.24)}
-      .welcomePanelImage{display:block;width:100%;height:auto;aspect-ratio:506/340;object-fit:contain;background:#17345f}
+      .welcomeVisual>.welcomePanelImage{display:block!important;width:100%!important;max-width:none!important;height:auto!important;aspect-ratio:506/340!important;object-fit:contain!important;background:#17345f!important;border-radius:24px!important;position:static!important;filter:none!important}
 
       .welcomeAbout{background:#f4f0e7!important}
       .welcomeSectionLabel{color:#126aa3!important}
@@ -78,14 +77,13 @@
 
       @media(max-width:900px){
         .welcomeContactInner{grid-template-columns:1fr;gap:32px}
-        .welcomeVisual{min-height:350px!important}
-        .welcomePanelArt{width:min(620px,100%)}
+        .welcomeVisual{width:min(620px,100%)!important;justify-self:center!important}
       }
       @media(max-width:520px){
         .welcomeContact{padding-block:48px}
         .welcomeInstitutions{padding:12px}
-        .welcomeVisual{min-height:285px!important}
-        .welcomePanelArt{border-radius:18px}
+        .welcomeVisual{border-radius:18px!important}
+        .welcomeVisual>.welcomePanelImage{border-radius:18px!important}
       }
     `;
     document.head.appendChild(style);
@@ -100,19 +98,15 @@
   const buildWelcomeVisual = () => {
     const visual = document.querySelector(".welcomeVisual");
     if (!(visual instanceof HTMLElement)) return;
-    if (visual.querySelector(".welcomePanelImage")) return;
 
-    visual.innerHTML = "";
-    const panel = document.createElement("div");
-    panel.className = "welcomePanelArt";
+    const image = visual.querySelector("img");
+    if (!(image instanceof HTMLImageElement)) return;
 
-    const image = document.createElement("img");
-    image.className = "welcomePanelImage";
-    image.src = asset("painel-hero-conflow.webp?v=2");
-    image.alt = "Painel visual do Conflow com logo, rio e ícones";
+    if (!image.classList.contains("welcomePanelImage")) {
+      image.classList.add("welcomePanelImage");
+    }
 
-    panel.appendChild(image);
-    visual.appendChild(panel);
+    setImage(image, asset("painel-hero-conflow.webp?v=3"), "Painel visual do Conflow com logo, rio e ícones");
   };
 
   const ensureContactSection = () => {
