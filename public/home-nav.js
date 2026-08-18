@@ -2,6 +2,7 @@
   const script = document.currentScript || document.querySelector('script[src*="home-nav.js"]');
   const asset = (name) => script?.src ? new URL(name, script.src).href : name;
   const HOME_CASES_KEY = "conflow-open-case-selection";
+  let scheduled = false;
 
   const goHome = () => {
     const homeUrl = `${window.location.origin}${window.location.pathname}`;
@@ -43,21 +44,22 @@
     document.head.appendChild(style);
   };
 
+  const setImage = (img, src, alt) => {
+    if (!(img instanceof HTMLImageElement)) return;
+    if (img.src !== src) img.src = src;
+    if (typeof alt === "string" && img.alt !== alt) img.alt = alt;
+  };
+
   const enhanceWelcome = () => {
     addStyles();
 
     const logoUrl = asset("conflow-logo-hq.webp");
-    document.querySelectorAll(".brandLogo").forEach((img) => {
-      if (img instanceof HTMLImageElement) img.src = logoUrl;
-    });
-    const heroLogo = document.querySelector(".welcomeVisual img");
-    if (heroLogo instanceof HTMLImageElement) {
-      heroLogo.src = logoUrl;
-      heroLogo.alt = "Conflow";
-    }
+    document.querySelectorAll(".brandLogo").forEach((img) => setImage(img, logoUrl));
+    setImage(document.querySelector(".welcomeVisual img"), logoUrl, "Conflow");
 
     const ctaTitle = document.querySelector(".welcomeCta h2");
-    if (ctaTitle) ctaTitle.textContent = "Escolha um dos casos e construa o caminho.";
+    const desiredTitle = "Escolha um dos casos e construa o caminho.";
+    if (ctaTitle && ctaTitle.textContent !== desiredTitle) ctaTitle.textContent = desiredTitle;
 
     const steps = document.querySelector(".welcomeSteps");
     const cta = document.querySelector(".welcomeCta");
@@ -91,6 +93,18 @@
     start.click();
   };
 
+  const runEnhancements = () => {
+    scheduled = false;
+    enhanceWelcome();
+    openCaseSelectionIfRequested();
+  };
+
+  const scheduleEnhancements = () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(runEnhancements);
+  };
+
   document.addEventListener("click", (event) => {
     const target = event.target instanceof Element ? event.target : null;
     if (!target) return;
@@ -112,12 +126,8 @@
     }
   }, true);
 
-  const observer = new MutationObserver(() => {
-    enhanceWelcome();
-    openCaseSelectionIfRequested();
-  });
+  const observer = new MutationObserver(scheduleEnhancements);
   observer.observe(document.documentElement, { childList: true, subtree: true });
 
-  enhanceWelcome();
-  openCaseSelectionIfRequested();
+  scheduleEnhancements();
 })();
