@@ -214,7 +214,8 @@
   const enhanceCompletion = () => {
     [...document.querySelectorAll(".completion")].forEach((completion) => {
       const label = normalize(completion.querySelector(".stepLabel")?.textContent);
-      if (label !== "PERCURSO CONCLUÍDO" || completion.dataset.gabaritoReady === "true") return;
+      const supportsCheck = label === "PERCURSO CONCLUÍDO" || label === "FIM DESTE CAMINHO";
+      if (!supportsCheck || completion.dataset.gabaritoReady === "true") return;
       const actions = completion.querySelector(".completionActions");
       if (!actions) return;
 
