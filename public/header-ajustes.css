@@ -1,5 +1,6 @@
 .brand > span small {
-  font-size: 20px !important;
-  line-height: 1.3 !important;
-  max-width: 340px !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  max-width: 420px !important;
 }
